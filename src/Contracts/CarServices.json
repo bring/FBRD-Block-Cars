@@ -25,25 +25,6 @@
     "type": "event"
   },
   {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "registrationNum",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "dueDate",
-        "type": "uint256"
-      }
-    ],
-    "name": "NewCarRegistered",
-    "type": "event"
-  },
-  {
     "constant": false,
     "inputs": [
       {
@@ -67,6 +48,25 @@
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "registrationNum",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "dueDate",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewCarRegistered",
+    "type": "event"
   },
   {
     "constant": false,

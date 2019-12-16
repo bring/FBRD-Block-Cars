@@ -13,9 +13,9 @@ pragma solidity ^0.5.12;
         event ApprovalRegistered(string registrationNum,uint256 inspectionDate,string approvalId);
 
         function registerNewCar(string memory _registrationNum,uint256 _salesDate ) public {
-            cars[_registrationNum] = Car(0,_salesDate,"");
-          //to calculate due date on the basis of sales date
-          emit NewCarRegistered(_registrationNum,_salesDate);
+            uint256 _dueDate=_salesDate+63113904;
+            cars[_registrationNum] = Car(0,_dueDate,"");
+          emit NewCarRegistered(_registrationNum,_dueDate);
         }
 
         function search(string memory _regNum) public view returns (
