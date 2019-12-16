@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { Button, Modal, Form } from "react-bootstrap";
+import RegisterNewCar from "../common/RegisterNewCar";
+import SearchCarRegistration from "../common/SearchCarRegistration";
 
 const GovernmentPage = () => {
 
     return (
         <div>
-            Gov page
+            <RegisterNewCar />
+            <SearchCarRegistration />
         </div>
     );
 }
+
 
 export default GovernmentPage;
