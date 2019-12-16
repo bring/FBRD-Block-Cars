@@ -2,6 +2,13 @@ import React from "react";
 
 
 
-export function gov(){
-    
+const GovernmentPage = () => {
+
+    return (
+        <div>
+            Gov page
+        </div>
+    );
 }
+
+export default GovernmentPage;
