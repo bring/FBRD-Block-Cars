@@ -1,0 +1,167 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "registrationNum",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inspectionDate",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "approvalId",
+        "type": "string"
+      }
+    ],
+    "name": "ApprovalRegistered",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_regNum",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_inspectionDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_approvalId",
+        "type": "string"
+      }
+    ],
+    "name": "approve",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "registrationNum",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "dueDate",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewCarRegistered",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_registrationNum",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_salesDate",
+        "type": "uint256"
+      }
+    ],
+    "name": "registerNewCar",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getAllOverDue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "outInspectionDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "outDueDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "outApprovalId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "outRegistrationNum",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_regNum",
+        "type": "string"
+      }
+    ],
+    "name": "search",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "outInspectionDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "outDueDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "outApprovalId",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
