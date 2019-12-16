@@ -25,6 +25,25 @@
     "type": "event"
   },
   {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "registrationNum",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "dueDate",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewCarRegistered",
+    "type": "event"
+  },
+  {
     "constant": false,
     "inputs": [
       {
@@ -50,25 +69,6 @@
     "type": "function"
   },
   {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "registrationNum",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "dueDate",
-        "type": "uint256"
-      }
-    ],
-    "name": "NewCarRegistered",
-    "type": "event"
-  },
-  {
     "constant": false,
     "inputs": [
       {
@@ -86,51 +86,6 @@
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "get",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "getAllOverDue",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "outInspectionDate",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "outDueDate",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "outApprovalId",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "outRegistrationNum",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
