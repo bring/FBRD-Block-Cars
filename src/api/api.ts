@@ -8,3 +8,7 @@ export const registerNewCar = (regNumber: string, salesDateTimestamp: number) =>
     })
     // todo : the actual blockchain call
 }
+
+export const approveCarService = (regNumber: string, serviceDate: number, approvalId: string) => {
+    // todo
+}
